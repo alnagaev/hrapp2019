@@ -1,9 +1,7 @@
 .idea/
 .vscode/
-/data
 data/*.csv
 data/*.txt
 .ipynb_*/
 __pycache__/
 
-./data/datafinal.csv
