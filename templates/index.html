@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Конструктор профессий на Flask с помощью интеллектуальных математических и логических примочек
+		</div>
+		
+	</div>
+	</header>
+
+	<div class='choice'>
+		<h1> Вы работодатель или работник? </h1>
+		<div class="buttons">
+			<a href="{{ url_for('worker') }}">Работник</a>	
+			<a href="{{ url_for('employer') }}">Работодатель</a>
+		</div>
+	</div>
+	<!-- <div>
+		<p class="blocktext"> Здесь мы подробно распишем особености нашего гениального проекта. Какую проблему он решает, какой он удобный, общественно полезный, безгранично креативный, special snowlfake и так далее. </p>
+	</div> -->
+<footer> IT клиника СПБГУ ©</footer>
+</body>
+</html>

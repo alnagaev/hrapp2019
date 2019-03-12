@@ -1,0 +1,186 @@
+/* Form styling begin*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+/* on hover placeholder */
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: blue;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#input{
+  width: 800px;
+  margin: auto;
+}
+
+#button{
+  padding-left: 150px;
+}
+
+
+.option{
+  padding: 1%;
+}
+
+input:hover {
+  background: silver;
+  color: blue;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px; 
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: silver;
+  color: blue;
+}
+
+#submit {
+  width: 502px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+/* Form styling ends */
+
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+a {
+  background-color: #03A9F4;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+}
+
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.choice{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}
+
+.buttons{
+	padding-left: 100px;
+}
+
+header{
+  display: flex;
+	background:#03A9F4;#35434a;
+	border-bottom:#448AFF 3px solid;
+	height:120px;
+	padding-top:10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#description{
+	text-align: center;
+}
+
+.main-header{
+    text-align:center;
+    background-color: blue;
+    height:100px;
+    width:100%;
+    margin:0px;
+}
+
+#brandname{
+	float:left;
+	font-size:30px;
+	color: #fff;
+  margin: 10px;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+
+}
+
+
+
+.btn-info {background-color: #2196F3;
+	height:40px;
+	width:100px;} /* Blue */
+.btn-info:hover {background: #0b7dda;}
+
+
+.results{
+	border-radius: 15px 50px;
+    background: #345fe4;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+}
+
+footer {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: blue;
+  margin-left: 500px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Ваш запрос обработан. Следующие варианты могут вас заинтересовать. 
+		</div>
+	</div>
+	</header>
+	<div>
+		<ul class="info">
+			{% for item in results %}
+				<li style="list-style-type:none; color:blue" onclick="myFunction()">Primary key</li>
+				<li class="popup" style="list-style-type:square">Сфера: {{item.first}}</li>
+				<li class="popup" style="list-style-type:square">Ожидаемая заработная плата: {{item.second}}</li>
+				<li class="popup" style="list-style-type:square">Опыт работы: {{item.third}}</li>
+				<li class="popup" style="list-style-type:square">Тип занятости: {{item.fourth}}</li>
+				<li class="popup" style="list-style-type:square">Профессия: {{item.fifth}}</li>
+				<li class="popup" style="list-style-type:square">Soft skills: {{item.sixth| replace('<p>', '')| replace('</p>', '')}}</li>
+				<li class="popup" style="list-style-type:square">Hard skills: {{item.seventh| replace('<p>', '')| replace('</p>', '')}}</li>
+                <li class="popup" style="list-style-type:square">Соответствие: {{item.score}}</li>
+				<br>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div>
+		<p class="blocktext"> Здесь мы подробно распишем советы для более эффективного поиска </p>
+	</div>
+<footer> IT клиника СПБГУ ©</footer>
+
+<script>
+	function myFunction() {
+		var a = document.getElementsByClassName("popup");
+		for (i = 0; i < a.length; i++) {
+			if (a[i].style.display === "none") {
+    			a[i].style = "display: block";
+				a[i].style = "list-style-type:square";
+			}
+			else {
+    			a[i].style.display = "none";
+  			}
+		} 
+	} 
+</script>
+</body>
+</html>

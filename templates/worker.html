@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div id="brandname">
+            <h1>Конструктор профессий</h1>
+        </div>
+        </div>
+    </header>
+    <h2 id="description">Введите умения и навыки, которые могут быть интересны работодателю</h2>
+    <form  id="input" method="post" action="{{ url_for('data') }}">
+        
+        <select name="first" id="first">
+            {% for item in ['Маркетинг, реклама, PR', 'Финансы, кредит, страхование, пенсионное обеспечение', 'Кадровая служба, управление персоналом', 'Здравоохранение, спорт, красота, социальное обеспечение', 'Искусство, культура и развлечения', 'Металлургия, металлообработка', 'Электроэнергетика', 'Безопасность, службы охраны', 'Сельское хозяйство, экология, ветеринария', 'Туризм, гостиницы, рестораны', 'Строительство, ремонт, стройматериалы, недвижимость', 'Высший менеджмент', 'Добывающая промышленность', 'Работы, не требующие квалификации', 'Государственная служба, некоммерческие организации', 'Химическая, нефтехимическая, топливная промышленность', 'Услуги населению, сервисное обслуживание', 'Транспорт, автобизнес, логистика, склад, ВЭД', 'Рабочие специальности', 'Консалтинг, стратегическое развитие, управление', 'Лесная, деревообрабатывающая, целлюлозно-бумажная промышленность', 'Домашний персонал', 'Легкая промышленность', 'Информационные технологии, телекоммуникации, связь', 'ЖКХ, эксплуатация', 'Машиностроение', 'Пищевая промышленность', 'Образование, наука', 'Административная работа, секретариат, АХО', 'Юриспруденция', 'Производство']
+            %}
+                <option value="{{item}}">{{item}}</option>
+            {% endfor %}            
+        </select>
+        <!-- {% for item in ['second', 'third', 'fourth', 'fifth', 'sixth', 'seventh'] %}
+        <div class="option">
+          <input name="{{item}}" id="{{item}}" type="text" placeholder="{{item}}">
+        </div>  
+        {% endfor %} -->
+        <div class="option">
+            <input name="second" id="second" type="text" placeholder="Ожидаемая з/п">
+        </div> 
+        <div class="option">
+            <input name="third" id="third" type="text" placeholder="Опыт работы">
+        </div>  
+        <div class="option">
+            <input name="fourth" id="fourth" type="text" placeholder="Тип занятости">
+        </div>  
+        <div class="option">
+            <input name="fifth" id="fifth" type="text" placeholder="Профессия">
+        </div>  
+        <div class="option">
+            <input name="sixth" id="sixth" type="text" placeholder="Soft skills">
+        </div>  
+        <div class="option">
+            <input name="seventh" id="seventh" type="text" placeholder="Hard skills">
+        </div>  
+        <div id="button">
+            <button>Отправить мое резюме</button>
+        </div>
+    </form>
+   <footer> IT клиника СПБГУ ©</footer>
+</body>
+</html>
+
